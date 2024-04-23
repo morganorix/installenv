@@ -1,4 +1,5 @@
 #!/bin/bash
+# URL : https://gist.github.com/ppacher/4d51323d7acd5ce89af202076d086aba
 
 pretty() {
     prefix=$1
