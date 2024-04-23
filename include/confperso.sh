@@ -20,7 +20,7 @@ alias ls="exa --long -g"
 alias cat="${bat} --paging=never --map-syntax=\"*.conf:nginx\" -l C++"
 # TAIL amélioré
 tailpimpe() {
-        tail -f "$1" | ${bat} --paging=never -l log;
+        tail -f "\$1" | ${bat} --paging=never -l log;
 }
 alias log="tailpimpe"
 EOF
