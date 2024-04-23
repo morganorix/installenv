@@ -1,9 +1,11 @@
-# installenv
+# Project : install env
 This is a graphical installation with multiple choices for configuring an optimal ssh environment.
 
 (Works on Debian or rapsaberry)
 
 ![Screenshot](images/install.png)
+
+## Installation
 
 Connect to new environnment linux via ssh.
 
@@ -23,9 +25,11 @@ Or
 ➜ ~/ ./env/install.sh
 ```
 
-If docker is installed a new alias is configured.
+## Use
 
-#### dcps
+Aliases are installed according to the installation you have chosen.
+
+### dcps
 
 It's a docker compose ps more pretty and lisible
 
@@ -43,7 +47,7 @@ It's a docker compose ps more pretty and lisible
 
 ```
 
-#### dcip
+### dcip
 
 As dcps, it display more pretty and lisible ips and ports by conteners.
 
@@ -59,7 +63,7 @@ As dcps, it display more pretty and lisible ips and ports by conteners.
 ───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 
-#### cat
+### cat
 
 It's a cat more pretty and lisible
 
@@ -85,7 +89,7 @@ It's a cat more pretty and lisible
 ───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 
-#### log
+### log
 
 It's a cat more pretty and lisible.
 
