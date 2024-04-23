@@ -88,12 +88,18 @@ EOF'
 
     sub-title "CONFIGURATION" "Activation du motd"
 
-    pretty sudo rm /etc/motd && text "Info" "Suppression du lien symbolique existant." || text "Error" "Impossible de supprimer le lien symbolique."
+    pretty sudo rm /etc/motd 
+    [ ! "$?" -ne 0 ] && text "Info" "Suppression du lien symbolique existant." || text "Error" "Impossible de supprimer le lien symbolique."
 
-    pretty sudo chmod 0740 /etc/update-motd.d/* && text "Info" "Changement de droit des fichiers /etc/update-motd.d/" || text "Error" "Impossible de changer les droits des fichiers /etc/update-motd.d/"
+    pretty sudo chmod 0740 /etc/update-motd.d/* 
+    [ ! "$?" -ne 0 ] && text "Info" "Changement de droit des fichiers /etc/update-motd.d/" || text "Error" "Impossible de changer les droits des fichiers /etc/update-motd.d/"
     
-    pretty sudo ln -s /var/run/motd.dynamic /etc/motd && text "Info" "Lien symbolique créé." || text "Error" "Impossible de créé le lien symbolique."
+    pretty sudo ln -s /var/run/motd.dynamic /etc/motd
+    [ ! "$?" -ne 0 ] && text "Info" "Lien symbolique créé." || text "Error" "Impossible de créé le lien symbolique."
 
+    pretty sudo sed -i -e 's/session    optional     pam_motd.so noupdate/# session    optional     pam_motd.so noupdate/g' /etc/pam.d/sshd
+    [ ! "$?" -ne 0 ] && text "Info" "Modification du fichier /etc/pam.d/sshd." || text "Error" "Impossible de créé le fichier /etc/pam.d/sshd."
+    
     sub-title "VISUALISATION DU MOTD"
     sudo run-parts /etc/update-motd.d/
 }
