@@ -13,26 +13,6 @@ Bold='\033[1m'
 Italic='\e[3m'
 Underline='\033[4m'
 
-# Function to print colored text with specified color and style
-print_colored_text() {
-    local color=$1
-    local styles=("${@:2:$#-2}")
-    local text=${!#}
-    local reset='\033[0m'
-    # shellcheck disable=SC2155
-    # shellcheck disable=SC2086
-    local color_code=$(eval echo \$${color})
-    local style_codes=""  
-
-    for style in "${styles[@]}"; do
-        # shellcheck disable=SC2086
-        # shellcheck disable=SC1083
-        style_codes+="$(eval echo \${$style})"
-    done
-    
-    echo -e "${color_code}${style_codes}${text}${reset}"
-}
-
 title() {
     local message="$1"
     local len=$((${#message}+2))
