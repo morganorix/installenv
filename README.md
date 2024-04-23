@@ -24,6 +24,9 @@ Or
 ```
 ➜ ~/ ./env/install.sh
 ```
+AND
+
+Select your choices to the dialog interface.
 
 ## Use
 
