@@ -16,8 +16,8 @@ start() {
         'bat' 'bat Command cat en plus classe' on
         'motd' 'Motd dynamique pour un affichage plus classe' on
         'docker' 'Install docker cli (debian)' off
-        'Conf' 'Fichier .bash avec ses alias' on
         'zsh' 'The Z shell' on
+        'Conf' 'Fichier .bash avec ses alias' on
     )
 
     echo "$(window \"$options\" \"Installation environnement\")"
