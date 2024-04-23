@@ -76,7 +76,6 @@ title() {
     local len=$((${#message}+2))
     printf "\n+"
     printf -- "-%.0s" $(seq 1 $len)
-    # shellcheck disable=SC2059
     printf "+\n| \e[36;1m" "$message" "|\n+""
     printf -- "-%.0s" $(seq 1 $len)
     printf "+\n"
