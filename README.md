@@ -3,6 +3,8 @@ This is a graphical installation with multiple choices for configuring an optima
 
 (Works on Debian or rapsaberry)
 
+![alt-text-1]((https://raw.githubusercontent.com/morganorix/installenv/8f92c30350fe6910b85c96c372ac68f95bcc8c07/images/Capture%20d’écran%202024-04-23%20à%2018.25.11.png)")
+
 Connect to new environnment linux via ssh.
 
 Copy directory folder **env/** in your user profile **~/**.
@@ -37,6 +39,7 @@ It's a docker compose ps more pretty and lisible
 ───────┴────────────────────────────────────────────────────────────────────────────────────────────────────
 
 ```
+![alt-text-2]((https://raw.githubusercontent.com/morganorix/installenv/8f92c30350fe6910b85c96c372ac68f95bcc8c07/images/Capture%20d’écran%202024-04-23%20à%2018.07.07.png)")
 
 #### dcip
 
@@ -51,6 +54,8 @@ As dcps, it display more pretty and lisible ips and ports by conteners.
 ───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────
 
 ```
+![alt-text-2]((https://raw.githubusercontent.com/morganorix/installenv/8f92c30350fe6910b85c96c372ac68f95bcc8c07/images/Capture%20d’écran%202024-04-23%20à%2018.07.17.png)")
+
 
 #### cat
 
