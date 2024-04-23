@@ -3,7 +3,6 @@
 INCLUDE="${PWD}/.scripts/env/include"
 
 source "$INCLUDE/colors.sh"
-#source "$INCLUDE/notif.sh"
 source "$INCLUDE/pretty.sh"
 source "$INCLUDE/zsh.sh"
 source "$INCLUDE/motd.sh"
