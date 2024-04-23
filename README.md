@@ -3,6 +3,9 @@ This is a graphical installation with multiple choices for configuring an optima
 
 (Works on Debian or rapsaberry)
 
+## Prerequisites
+It's an open-source project that's still in development, and can be improved by the community.
+
 ![Screenshot](images/install.png)
 
 ## Installation
