@@ -2,7 +2,8 @@
 This is a graphical installation with multiple choices for configuring an optimal ssh environment.
 
 (Works on Debian or rapsaberry)
-![Screenshot](images/screenshot.png)
+
+![Screenshot](images/install.png)
 
 Connect to new environnment linux via ssh.
 
@@ -27,6 +28,9 @@ If docker is installed a new alias is configured.
 #### dcps
 
 It's a docker compose ps more pretty and lisible
+
+![Screenshot](images/dcps.png)
+
 ```
 ➜ ~/ dcps
 ───────┬────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -38,11 +42,13 @@ It's a docker compose ps more pretty and lisible
 ───────┴────────────────────────────────────────────────────────────────────────────────────────────────────
 
 ```
-![alt-text-2]((https://raw.githubusercontent.com/morganorix/installenv/8f92c30350fe6910b85c96c372ac68f95bcc8c07/images/Capture%20d’écran%202024-04-23%20à%2018.07.07.png)")
 
 #### dcip
 
 As dcps, it display more pretty and lisible ips and ports by conteners.
+
+![Screenshot](images/dcip.png)
+
 ```
 ➜ ~/ dcip
 ───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -51,14 +57,14 @@ As dcps, it display more pretty and lisible ips and ports by conteners.
    1   │ /Kuma  |  172.18.0.3    |  {"3001/tcp":{}}
    2   │ /Ntfy  |  172.18.0.2    |  {"80/tcp":{}}
 ───────┴─────────────────────────────────────────────────────────────────────────────────────────────────────
-
 ```
-![alt-text-2]((https://raw.githubusercontent.com/morganorix/installenv/8f92c30350fe6910b85c96c372ac68f95bcc8c07/images/Capture%20d’écran%202024-04-23%20à%2018.07.17.png)")
-
 
 #### cat
 
 It's a cat more pretty and lisible
+
+![Screenshot](images/cat.png)
+
 ```
 ➜ ~/ cat .bash
 ───────┬──────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -81,12 +87,15 @@ It's a cat more pretty and lisible
 
 #### log
 
-It's a cat more pretty and lisible
+It's a cat more pretty and lisible.
+
+![Screenshot](images/log.png)
+
 ```
 ➜ ~/ sudo log /var/logs/samba/log.smbd
-───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+───────┬────────────────────────────────────────────────────────────────────────────────────────────────────────
        │ STDIN
-───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+───────┼────────────────────────────────────────────────────────────────────────────────────────────────────────
    1   │ [2024/04/23 11:25:34.732905,  0] ../../source3/smbd/server.c:1784(main)
    2   │   smbd version 4.13.13-Debian started.
    3   │   Copyright Andrew Tridgell and the Samba Team 1992-2020
