@@ -2,8 +2,7 @@
 This is a graphical installation with multiple choices for configuring an optimal ssh environment.
 
 (Works on Debian or rapsaberry)
-
-![alt-text-1]((https://raw.githubusercontent.com/morganorix/installenv/8f92c30350fe6910b85c96c372ac68f95bcc8c07/images/Capture%20d’écran%202024-04-23%20à%2018.25.11.png)")
+![Screenshot]([https://myoctocat.com/assets/images/base-octocat.svg](https://raw.githubusercontent.com/morganorix/installenv/8f92c30350fe6910b85c96c372ac68f95bcc8c07/images/Capture%20d’écran%202024-04-23%20à%2018.25.11.png))
 
 Connect to new environnment linux via ssh.
 
