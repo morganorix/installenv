@@ -6,7 +6,7 @@ zsh() {
     installpkg "zsh"
 
     local options=(
-        'Oh-my-zsh' 'Plugin: Installation du thème pour le terminal' on
+        'Oh-my-zsh' 'Plugin: Installation du thème pour le terminal (Select "no" in run install)' on
         'Highlight' 'Plugin: oh-my-zsh' on
     )
 
