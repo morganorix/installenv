@@ -35,6 +35,6 @@ highlight() {
 
     if [[ $? -eq 0 ]]; then
         echo "source ${PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >>${ZDOTDIR:-$HOME}/.zshrc
-        text "Info" "Faire un  : \"source .zshrc\""
+        text "Info" "Faire un  : \"source .zshrc\" à la fin complète de l'installation"
     fi
 }
