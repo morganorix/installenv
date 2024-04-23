@@ -9,3 +9,7 @@ Use example
 ```
 ➜ ~/ bash install.sh
 ```
+Or
+```
+➜ ~/ ./install.sh
+```
