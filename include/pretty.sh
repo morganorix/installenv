@@ -71,12 +71,27 @@ Bold='\033[1m'
 Italic='\e[3m'
 Underline='\033[4m'
 
+print_colored_text() {
+    local color=$1
+    local styles=("${@:2:$#-2}")
+    local text=${!#}
+    local reset='\033[0m'
+    local color_code=$(eval echo \$${color})
+    local style_codes=""  
+
+    for style in "${styles[@]}"; do
+        style_codes+="$(eval echo \${$style})"
+    done
+    
+    echo -e "${color_code}${style_codes}${text}${reset}"
+}
+
 title() {
     local message="$1"
     local len=$((${#message}+2))
     printf "\n+"
     printf -- "-%.0s" $(seq 1 $len)
-    printf "+\n| \e[36;1m" "$message" "|\n+""
+    printf "+\n| $(print_colored_text Yellow Bold "$message") |\n+"
     printf -- "-%.0s" $(seq 1 $len)
     printf "+\n"
 }
