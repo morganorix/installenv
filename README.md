@@ -7,5 +7,5 @@ Copy directory folder **env/** in your user profile **~/**
 
 Use example
 ```
-➜ **~/** bash install.sh
+➜ ~/ bash install.sh
 ```
