@@ -40,7 +40,7 @@ EOF
     [ ! "$?" -ne 0 ] && text "Info" "Le fichier ${PWD}/.docker/config.json est créé et configuré" || text "Error" "Impossible de configurer le fichier ${PWD}/.docker/config.json"
 
         cat 2>/dev/null << EOF >> ${PWD}/.bash
-alias dc="docker-compose"
+alias dc="docker compose"
 alias dcps="docker ps -a | ${bat} --paging=never -l 'C++'"
 alias dcip="${PWD}/.scripts/docker/dockerip.sh"
 EOF
