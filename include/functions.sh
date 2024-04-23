@@ -15,9 +15,9 @@ start() {
         'exa' 'Command ls plus classe' on
         'bat' 'bat Command cat en plus classe' on
         'motd' 'Motd dynamique pour un affichage plus classe' on
-        'zsh' 'The Z shell' on
         'docker' 'Install docker cli (debian)' off
         'Conf' 'Fichier .bash avec ses alias' on
+        'zsh' 'The Z shell' on
     )
 
     echo "$(window \"$options\" \"Installation environnement\")"
