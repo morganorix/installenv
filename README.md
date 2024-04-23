@@ -66,7 +66,7 @@ It's a cat more pretty and lisible
    4   │ alias cat="/usr/bin/batcat --paging=never --map-syntax=\"*.conf:nginx\" -l C++"
    5   │ # TAIL amélioré
    6   │ tailpimpe() {
-   7   │         tail -f "" | /usr/bin/batcat --paging=never -l log;
+   7   │         tail -f "$1" | /usr/bin/batcat --paging=never -l log;
    8   │ }
    9   │ alias log="tailpimpe"
   10   │ alias dc="docker compose"
@@ -75,4 +75,17 @@ It's a cat more pretty and lisible
 ───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 
+#### log
 
+It's a cat more pretty and lisible
+```
+➜ ~/ sudo log /var/logs/samba/log.smbd
+───────┬─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ STDIN
+───────┼─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ [2024/04/23 11:25:34.732905,  0] ../../source3/smbd/server.c:1784(main)
+   2   │   smbd version 4.13.13-Debian started.
+   3   │   Copyright Andrew Tridgell and the Samba Team 1992-2020
+   4   │ [2024/04/23 11:25:35.392797,  0] ../../lib/util/become_daemon.c:135(daemon_ready)
+   5   │   daemon_ready: daemon 'smbd' finished starting up and ready to serve connections
+```
