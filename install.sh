@@ -1,6 +1,7 @@
 #!/bin/bash
 
-INCLUDE="${PWD}/env/include"
+dir=$(cd "$(dirname "$0")"; pwd)
+INCLUDE="$dir/include"
 
 source "$INCLUDE/pretty.sh"
 source "$INCLUDE/zsh.sh"
