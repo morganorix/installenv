@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INCLUDE="${PWD}/.scripts/env/include"
+INCLUDE="${PWD}/env/include"
 
 source "$INCLUDE/pretty.sh"
 source "$INCLUDE/zsh.sh"
